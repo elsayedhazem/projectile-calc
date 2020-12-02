@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/projectile-calc/static/css/main.106baaae.chunk.css",
+    "main.js": "/projectile-calc/static/js/main.bd2567bf.chunk.js",
+    "main.js.map": "/projectile-calc/static/js/main.bd2567bf.chunk.js.map",
+    "runtime-main.js": "/projectile-calc/static/js/runtime-main.59b87a52.js",
+    "runtime-main.js.map": "/projectile-calc/static/js/runtime-main.59b87a52.js.map",
+    "static/js/2.b0f48a38.chunk.js": "/projectile-calc/static/js/2.b0f48a38.chunk.js",
+    "static/js/2.b0f48a38.chunk.js.map": "/projectile-calc/static/js/2.b0f48a38.chunk.js.map",
+    "index.html": "/projectile-calc/index.html",
+    "static/css/main.106baaae.chunk.css.map": "/projectile-calc/static/css/main.106baaae.chunk.css.map",
+    "static/js/2.b0f48a38.chunk.js.LICENSE.txt": "/projectile-calc/static/js/2.b0f48a38.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.59b87a52.js",
+    "static/js/2.b0f48a38.chunk.js",
+    "static/css/main.106baaae.chunk.css",
+    "static/js/main.bd2567bf.chunk.js"
+  ]
+}
