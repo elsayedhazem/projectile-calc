@@ -1,23 +1,29 @@
 import { useState } from "react";
 import calculate from "./logic";
 
-export default function useForm(initialInputValues) {
+export default function useForm() {
+  const initialInputValues = {
+    initialVelocity: "",
+    angle: "",
+    initialHeight: "",
+  };
+  const initialOutputValues = {
+    travelTime: 0,
+    maxHeight: 0,
+    horizontalDistance: 0,
+  };
   const [inputValues, setInputValues] = useState(initialInputValues);
-  const [results, setResults] = useState();
+  const [outputValues, setOutputValues] = useState(initialOutputValues);
 
   return {
     inputValues: inputValues,
-    results: results,
+    outputValues: outputValues,
     handleChange: (e) => {
       setInputValues({
         ...inputValues,
         [e.target.name]: e.target.value,
       });
-    },
-    handleSubmit: (e) => {
-      const { initialVelocity, angle, initialHeight } = inputValues;
-      setResults(calculate(initialVelocity, angle, initialHeight));
-      setInputValues(initialInputValues);
+      setOutputValues(calculate(inputValues));
     },
   };
 }

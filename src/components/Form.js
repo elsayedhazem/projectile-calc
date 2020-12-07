@@ -13,61 +13,50 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "100%",
   },
-  formButton: {
-    width: "100%",
-  },
 }));
 
 function Form(props) {
   const classes = useStyles(theme);
 
   return (
-    <form onSubmit={props.handleSubmit}>
-      <Grid container item className={classes.formInput}>
-        <Grid className={classes.formItem} item xs={4}>
-          <TextField
-            className={classes.formField}
-            label="Initial Velocity"
-            placeholder="0 m/s"
-            type="number"
-            name="initialVelocity"
-            variant="outlined"
-            value={props.inputValues.initialVelocity}
-            onChange={props.handleChange}
-          />
-        </Grid>
-        <Grid item className={classes.formItem} xs={4}>
-          <TextField
-            className={classes.formField}
-            label="Angle"
-            placeholder="0 degrees"
-            type="number"
-            name="angle"
-            variant="outlined"
-            value={props.inputValues.angle}
-            onChange={props.handleChange}
-          />
-        </Grid>
-        <Grid item className={classes.formItem} xs={4}>
-          <TextField
-            className={classes.formField}
-            label="Initial Height"
-            placeholder="0 m"
-            type="number"
-            name="initialHeight"
-            variant="outlined"
-            value={props.inputValues.initialHeight}
-            onChange={props.handleChange}
-          />
-        </Grid>
+    <Grid container item className={classes.formInput}>
+      <Grid className={classes.formItem} item xs={4}>
+        <TextField
+          className={classes.formField}
+          label="Initial Velocity"
+          placeholder="0 m/s"
+          type="number"
+          name="initialVelocity"
+          variant="outlined"
+          value={props.inputValues.initialVelocity}
+          onChange={props.handleChange}
+        />
       </Grid>
-
-      <Grid item>
-        <Button className={classes.formButton} variant="outlined" type="submit">
-          Calculate
-        </Button>
+      <Grid item className={classes.formItem} xs={4}>
+        <TextField
+          className={classes.formField}
+          label="Angle"
+          placeholder="0 degrees"
+          type="number"
+          name="angle"
+          variant="outlined"
+          value={props.inputValues.angle}
+          onChange={props.handleChange}
+        />
       </Grid>
-    </form>
+      <Grid item className={classes.formItem} xs={4}>
+        <TextField
+          className={classes.formField}
+          label="Initial Height"
+          placeholder="0 m"
+          type="number"
+          name="initialHeight"
+          variant="outlined"
+          value={props.inputValues.initialHeight}
+          onChange={props.handleChange}
+        />
+      </Grid>
+    </Grid>
   );
 }
 

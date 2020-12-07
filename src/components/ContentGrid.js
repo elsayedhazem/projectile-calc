@@ -14,20 +14,12 @@ const useStyles = makeStyles({
 function ContentGrid(props) {
   const classes = useStyles();
 
-  const { inputValues, results, handleChange, handleSubmit } = useForm({
-    initialVelocity: "",
-    angle: "",
-    initialHeight: "",
-  });
+  const { inputValues, outputValues, handleChange } = useForm();
 
   return (
     <Grid container direction="column" className={classes.gridMain}>
-      <Form
-        inputValues={inputValues}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-      />
-      <Results results={results} />
+      <Form inputValues={inputValues} handleChange={handleChange} />
+      <Results values={outputValues} />
     </Grid>
   );
 }
