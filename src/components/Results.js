@@ -1,37 +1,46 @@
 import React from "react";
-import { Grid, Typography } from "@material-ui/core/";
+import { Grid, Typography, Box } from "@material-ui/core/";
 import { makeStyles } from "@material-ui/core/styles";
-import theme from "../theme";
 
-const useStyles = makeStyles((theme) => ({
-  card: {
-    backgroundColor: "inherit",
-    textAlign: "center",
-    borderWidth: "0",
-  },
+const useStyles = makeStyles({
   gridItem: {
-    margin: theme.spacing(1),
+    height: "20vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     textAlign: "center",
   },
-}));
+});
 
 function Results(props) {
   const { travelTime, maxHeight, horizontalDistance } = props.values;
 
-  const classes = useStyles(theme);
+  const classes = useStyles();
   return (
-    <Grid className={classes.gridMain} item container direction="column">
+    <Grid item container direction="column">
       <Grid item className={classes.gridItem}>
-        <Typography variant="h6">Travel Time</Typography>
-        <Typography>{travelTime}</Typography>
+        <Box>
+          <Typography variant="h4">Travel Time</Typography>
+          <Typography>
+            <Typography variant="h5">{travelTime} s</Typography>
+          </Typography>
+        </Box>
       </Grid>
       <Grid item className={classes.gridItem}>
-        <Typography variant="h6">Max Height</Typography>
-        <Typography>{maxHeight}</Typography>
+        <Box>
+          <Typography variant="h4">Max Height</Typography>
+          <Typography>
+            <Typography variant="h5">{maxHeight} m</Typography>
+          </Typography>
+        </Box>
       </Grid>
       <Grid item className={classes.gridItem}>
-        <Typography variant="h6">Horizontal Distance Traveled</Typography>
-        <Typography>{horizontalDistance}</Typography>
+        <Box>
+          <Typography variant="h4">Horizontal Distance Traveled</Typography>
+          <Typography>
+            <Typography variant="h5">{horizontalDistance} m</Typography>
+          </Typography>
+        </Box>
       </Grid>
     </Grid>
   );

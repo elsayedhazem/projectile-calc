@@ -7,7 +7,7 @@ import Results from "./Results";
 
 const useStyles = makeStyles({
   gridMain: {
-    height: "70vh",
+    height: "75vh",
   },
 });
 

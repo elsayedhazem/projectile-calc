@@ -5,7 +5,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import theme from "../theme.js";
 
 const useStyles = makeStyles((theme) => ({
-  formInput: {},
+  formInput: {
+    height: "15%",
+  },
   formItem: {
     padding: theme.spacing(0.5),
   },

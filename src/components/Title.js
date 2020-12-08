@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
-    height: "30vh",
+    height: "25vh",
     minWidth: "100%",
     display: "flex",
     justifyContent: "center",
@@ -20,8 +20,8 @@ function Title() {
 
   return (
     <div className={classes.root}>
-      <Typography variant="h1" className={classes.title}>
-        Ayo
+      <Typography variant="h2" className={classes.title}>
+        Projectile Motion Calculator
       </Typography>
     </div>
   );
