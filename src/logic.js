@@ -27,9 +27,15 @@ function calculate({ initialVelocity, angle, initialHeight }) {
     angle: Number(angle),
     initialHeight: Number(initialHeight),
   };
+  const values = {
+    travelTime: 0,
+    maxHeight: 0,
+    horizontalDistance: 0,
+  };
+
+  if (motionProps.initialVelocity === 0) return values;
   const funcProps = quadraticFunc(motionProps);
 
-  const values = {};
   values.travelTime = funcProps.positiveRoot;
   console.log(funcProps.xVertex);
   values.maxHeight =
