@@ -7,23 +7,16 @@ export default function useForm() {
     angle: "",
     initialHeight: "",
   };
-  const initialOutputValues = {
-    travelTime: 0,
-    maxHeight: 0,
-    horizontalDistance: 0,
-  };
   const [inputValues, setInputValues] = useState(initialInputValues);
-  const [outputValues, setOutputValues] = useState(initialOutputValues);
 
   return {
     inputValues: inputValues,
-    outputValues: outputValues,
+    outputValues: calculate(inputValues),
     handleChange: (e) => {
       setInputValues({
         ...inputValues,
         [e.target.name]: e.target.value,
       });
-      setOutputValues(calculate(inputValues));
     },
   };
 }
