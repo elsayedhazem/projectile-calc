@@ -36,7 +36,7 @@ function Results(props) {
       </Grid>
       <Grid item className={classes.gridItem}>
         <Box>
-          <Typography variant="h4">Horizontal Distance Traveled</Typography>
+          <Typography variant="h4">Horizontal Distance Travelled</Typography>
           <Typography>
             <Typography variant="h5">{horizontalDistance} m</Typography>
           </Typography>
