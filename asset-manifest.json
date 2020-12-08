@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/projectile-calc/static/css/main.106baaae.chunk.css",
-    "main.js": "/projectile-calc/static/js/main.bd2567bf.chunk.js",
-    "main.js.map": "/projectile-calc/static/js/main.bd2567bf.chunk.js.map",
+    "main.css": "/projectile-calc/static/css/main.f09cba07.chunk.css",
+    "main.js": "/projectile-calc/static/js/main.9ecdc6b8.chunk.js",
+    "main.js.map": "/projectile-calc/static/js/main.9ecdc6b8.chunk.js.map",
     "runtime-main.js": "/projectile-calc/static/js/runtime-main.59b87a52.js",
     "runtime-main.js.map": "/projectile-calc/static/js/runtime-main.59b87a52.js.map",
-    "static/js/2.b0f48a38.chunk.js": "/projectile-calc/static/js/2.b0f48a38.chunk.js",
-    "static/js/2.b0f48a38.chunk.js.map": "/projectile-calc/static/js/2.b0f48a38.chunk.js.map",
+    "static/js/2.5595e6dc.chunk.js": "/projectile-calc/static/js/2.5595e6dc.chunk.js",
+    "static/js/2.5595e6dc.chunk.js.map": "/projectile-calc/static/js/2.5595e6dc.chunk.js.map",
     "index.html": "/projectile-calc/index.html",
-    "static/css/main.106baaae.chunk.css.map": "/projectile-calc/static/css/main.106baaae.chunk.css.map",
-    "static/js/2.b0f48a38.chunk.js.LICENSE.txt": "/projectile-calc/static/js/2.b0f48a38.chunk.js.LICENSE.txt"
+    "static/css/main.f09cba07.chunk.css.map": "/projectile-calc/static/css/main.f09cba07.chunk.css.map",
+    "static/js/2.5595e6dc.chunk.js.LICENSE.txt": "/projectile-calc/static/js/2.5595e6dc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.59b87a52.js",
-    "static/js/2.b0f48a38.chunk.js",
-    "static/css/main.106baaae.chunk.css",
-    "static/js/main.bd2567bf.chunk.js"
+    "static/js/2.5595e6dc.chunk.js",
+    "static/css/main.f09cba07.chunk.css",
+    "static/js/main.9ecdc6b8.chunk.js"
   ]
 }

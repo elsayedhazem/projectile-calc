@@ -1,2 +1,0 @@
-(this["webpackJsonpprojectile-calc"]=this["webpackJsonpprojectile-calc"]||[]).push([[0],{10:function(e,c,t){},11:function(e,c,t){"use strict";t.r(c);var n=t(0),r=t(1),o=t.n(r),i=t(3),s=t.n(i);t(9),t(10);var l=function(){return Object(n.jsx)("div",{className:"App",children:"Hello World"})};s.a.render(Object(n.jsx)(o.a.StrictMode,{children:Object(n.jsx)(l,{})}),document.getElementById("root"))},9:function(e,c,t){}},[[11,1,2]]]);
-//# sourceMappingURL=main.bd2567bf.chunk.js.map
